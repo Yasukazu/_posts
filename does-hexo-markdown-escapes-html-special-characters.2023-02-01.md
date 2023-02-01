@@ -15,5 +15,13 @@ HTML document needs to escape special characters like 'Less than', 'Greater than
 - &lt; and &gt; must escape manually markdown writer himself / herself.
 - Other HTML entities like aportrophe(&apos;) are no need to escape. 
 
-### Escaping special characters 'LT'(&lt;) and 'GT'(&gt;)
-- Two special characters:[ _less-than_ (\<) and  _greater-than_ (\>) ] need forwarding  **backslash** inserted as:["\\&lt;", "\\&gt;"] not to be treated as embedding HTML tags.
+### Escaping special characters 'L.T.'(&lt;), 'G.T.'(&gt;) and 'back-slash'(<pre lang='en'>\\</pre>)
+
+ Three special characters:
+ [ _less-than_ , _greater-than_ , _back-slash_ ]
+[\<, \>, \\]
+
+ need a **backslash** is inserted in front of each of them like:
+[\\<, \\>, \\\\]
+
+ not to be treated as embedding HTML tags and an **escape** character.
