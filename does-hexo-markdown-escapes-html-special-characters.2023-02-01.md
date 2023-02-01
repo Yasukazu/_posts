@@ -8,8 +8,20 @@ tags:
 ---
 
 In Hexo, A markdown-format post is converted to HTML.
-HTML document needs to escape special characters like 'Less than', 'Greater than' and 'Apostropy' as:
-'&lt;', '&gt;','&apos; / &#x27;', '&rarr;'.
+HTML document needs to escape special two characters of 'Less than' and 'Greater than':
+'&lt;'
+
+'&gt;'
+
+as:
+```
+&lt;
+&gt;
+```
+
+\<br\>
+is written as:
+``\<br\>``
 
 ## Result of entities:
 - &lt; and &gt; must escape manually markdown writer himself / herself.
