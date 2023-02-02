@@ -7,33 +7,22 @@ tags:
  - HTML
 ---
 
-In Hexo, A markdown-format post is converted to HTML.
-HTML document needs to escape special two characters of 'Less than' and 'Greater than':
-'&lt;'
+In Hexo, A markdown-format post is converted to HTML format.
 
-'&gt;'
-
-as:
-```
-&lt;
-&gt;
+HTML documents need to escape special two characters: _Less-than_(\<) and _Greater-than_(\>) as:
+```HTML
+&lt; &gt;
 ```
 
-\<br\>
-is written as:
-``\<br\>``
+Markdown is easier than HTML about this escaping.
 
-## Result of entities:
-- &lt; and &gt; must escape manually markdown writer himself / herself.
-- Other HTML entities like aportrophe(&apos;) are no need to escape. 
+Just put an _escape_ character **backslash** before special characters as.
+```
+ \<  &lt; 
+ \>  &gt;
+```
 
-### Escaping special characters 'L.T.'(&lt;), 'G.T.'(&gt;) and 'back-slash'(<pre lang='en'>\\</pre>)
-
- Three special characters:
- [ _less-than_ , _greater-than_ , _back-slash_ ]
-[\<, \>, \\]
-
- need a **backslash** is inserted in front of each of them like:
-[\\<, \\>, \\\\]
-
- not to be treated as embedding HTML tags and an **escape** character.
+But Markdown also needs to escape the _escape_ character itself as:
+```
+\\  &bsol;
+```
