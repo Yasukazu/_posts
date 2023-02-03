@@ -9,20 +9,37 @@ tags:
 
 In Hexo, A markdown-format post is converted to HTML format.
 
-HTML documents need to escape special two characters: _Less-than_(\<) and _Greater-than_(\>) as:
-```HTML
-&lt; &gt;
+HTML documents need to escape special two characters:
+- _Less-than_(\<) 
+- _Greater-than_(\>)
+
+respectively:
+```
+\&lt;
+\&gt;
 ```
 
 Markdown is easier than HTML about this escaping.
 
-Just put an _escape_ character **backslash** before special characters as.
+Just put an _escape_ character **backslash** before special characters as:
 ```
- \<  &lt; 
- \>  &gt;
+ \<
+ \>
 ```
 
-But Markdown also needs to escape the _escape_ character itself as:
-```
-\\  &bsol;
-```
+But Markdown also needs to escape **Backslash** (\\) as:
+
+`\\`
+
+or write as an entity as:
+
+`&bsol;`
+
+And also, **Ampersand** (&) might be better to be escaped as:
+
+`\&`
+
+or write as an entity as:
+
+`&amp;`
+
