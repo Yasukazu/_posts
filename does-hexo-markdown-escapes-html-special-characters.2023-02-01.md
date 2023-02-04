@@ -31,15 +31,16 @@ But Markdown also needs to escape **Backslash** (\\) as:
 
 `\\`
 
-or write as an entity as:
+or write its entity as:
 
 `&bsol;`
+
+HTML-Entity backslash appears as: &bsol;
 
 And also, **Ampersand** (&) might be better to be escaped as:
 
 `\&`
 
-or write as an entity as:
+or write its entity as: `&amp;`
 
-`&amp;`
-
+HTML-Entity ampersand appears as: &amp;
