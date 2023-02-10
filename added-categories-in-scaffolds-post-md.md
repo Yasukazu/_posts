@@ -1,9 +1,13 @@
 ---
 title: Added 'categories' in scaffolds/post.md
 date: 2023-02-06 19:26:46
-tags: [agri, strawberry]
-categories: job
+tags: [category, scaffold]
+categories: Hexo
 ---
-Visited Agri Coop to apply a part-time job
+Added a _categories_ line in _front matter_.
 <!-- more -->
-The job is to harvest strawberry fruits.
+Inside _front matter_, added a line as:
+
+```njk
+categories: {{ categories }}
+```
