@@ -1,47 +1,4 @@
----
-title: Ignore diacritical marks in search
-date: 2023-02-17 16:43:33
-tags: ym-start
-categories: Hexo
----
-Search ignores marks like tilde(like letter 'n' with upper wave in _España_).
-<!-- more -->
-
-Japanese dakuten(だくてん) and handakuten(はんだくてん) are kind of diacritical mark.
-
-Search also ignores cases aka small or capital letters.
-
-1. This Hexo plugin code is:
-```nunjuks
-{% asset_img search-box.svg Search box %}
-```
-
-To show below image:
-{% asset_img search-box.svg Search box %}
-
-2. (1.) is an image short code of:
-```html
-<img src="{% asset_path search-box.svg %}" alt="Search box">
-```
-<img src="{% asset_path search-box.svg %}" alt="Search box">
-
-3. Marked _config.html
-```yaml
-post_asset_folder: true
-marked:
-  prependRoot: true
-  postAsset: true
-```
-
-Enables markdown:
-```markdown
-![](search-box.svg)
-```
-
-![](search-box.svg)
-
-4. Embed an image in the document
-
+<?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
   <rect x="65.496" y="67.168" width="185.619" height="255.853" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
   <rect x="74.972" y="118.45" width="98.105" height="25.084" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
