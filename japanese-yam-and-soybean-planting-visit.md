@@ -13,7 +13,6 @@ We attended an inspection of farmers planting Japanese mountain yam and young so
 - Need to fence against wild deer, serow and boar.
 - Hard to plant on old wet rice farm
 
-
 2. Young soybean in greenhouse
 
 - 4-time crop / year in greenhouse with active(fuel consuming) heater
@@ -23,4 +22,21 @@ We attended an inspection of farmers planting Japanese mountain yam and young so
 - Very hot in summer season: over 40 degrees in greenhouse
 
 ### figure of Japanese mountain yam planting
+
+- Markdown image
+```md
 ![](jinenjo-saibai.svg)
+```
+
+- HTML image
+
+```HTML
+<img src="{% asset_path jinenjo-saibai.svg %}" title="Japanese mountain yam planting" />
+```
+
+- Nunjuks(jinja2) image
+```njk
+{% asset_img jinenjo-saibai.svg "Japanese mountain yam planting" %}
+```
+
+{% asset_img jinenjo-saibai.svg "Japanese mountain yam planting" %}
