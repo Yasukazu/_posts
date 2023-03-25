@@ -7,20 +7,27 @@ categories: Hexo
 Tried to have a commenting system.
 <!-- more -->
 ## Disqus comment system:
-
-```JavaScript
+- Changed: `(d.head || d.body)` to `(d.body)`
+- Disqus in article(post)
+---
 <div id="disqus_thread"></div>
 <script>
-    const disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    (function() {
-    const d = document, s = d.createElement('script');
-    s.src = 'https://yasukazu-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.body).appendChild(s);
-    })();
+            const page_path = "2023/03/24/disqus-comment/";
+            const page_url = "https://blog.yskz.dev/" + page_path ";
+            var disqus_config = function ()
+            {
+                this.page.url = page_url;
+                this.page.identifier = '/' + page_path;
+            };
+            (function ()
+            {
+                var d = document,
+                    s = d.createElement('script');
+                s.src = 'https://yasukazu-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.body).appendChild(s);
+            })();
+    noscript.
+            - Please enable JavaScript to view the #[a(href="https://disqus.com/?ref_noscript",rel="nofollow") comments powered by Disqus.]
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-```
